@@ -1,13 +1,14 @@
-def strings_longer_than_ten(my_strings):
-    for hand in my_strings:
-     if hand in my_strings:
-         return  True
-     return  False
+def strings_finder(my_strings):
+    for item in my_strings:
+        if 'hand' in item:
+            return True
+    return False
 
 
+my_strings = ["put your hands on the table"]
+result = strings_finder(my_strings)
+print(f"В списку задане слово: {result}")
 
-
-
-my_strings = ["put your hand on the table"]
-result = strings_longer_than_ten(my_strings)
-print(f"В списку знайдено задане слово: {result}")
+my_strings = ["somethink on the table"]
+result = strings_finder(my_strings)
+print(f"В списку задане слово: {result}")
