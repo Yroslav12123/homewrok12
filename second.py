@@ -1,6 +1,6 @@
 def strings_longer_than_ten(my_strings):
-    for s in my_strings:
-     if len(s) > 10:
+    for hand in my_strings:
+     if hand in my_strings:
          return  True
      return  False
 
@@ -8,10 +8,6 @@ def strings_longer_than_ten(my_strings):
 
 
 
-my_strings = ["коротка стрічка", "дуже довга стрічка, набагато довша за 10 символів", "а це коротка"]
+my_strings = ["put your hand on the table"]
 result = strings_longer_than_ten(my_strings)
-print(f"Список має стрічки довші за 10 символів: {result}")
-
-my_strings = ["маленька", "трохи більша", "ще трохи більша"]
-result = strings_longer_than_ten(my_strings)
-print(f"Список має стрічки довші за 10 символів: {result}")
+print(f"В списку знайдено задане слово: {result}")
